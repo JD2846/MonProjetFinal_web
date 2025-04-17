@@ -1,0 +1,181 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forms{
+    width: 25%;
+    height: 76%;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid white;
+}
+.ecrans{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 85%;
+    height: 25%;
+    background-color: rgb(134, 205, 184);
+    border:none;
+    font-size: 25px;
+    padding: 5px;
+    color: black;
+    
+}
+input.ecran{
+    text-align: right;
+    outline: none;
+}
+input.input{
+    text-align: right;
+}
+.claviers{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clavier{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lignes{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.ligne{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lignec{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.touches{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px white;
+}
+button:hover{
+    background-color: rgb(123, 81, 1);
+    color: white;
+}
+.cols{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col4{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.touche-{
+    width: 63px;
+    height: 30px;
+    font-size: 25px;
+    color: blue;
+}
+.toucheS{
+    width: 63px;
+    height: 30px;
+    font-size: 20px;
+    color: blue;
+    background-color: orange;
+}
+.toucheP{
+    width: 63px;
+    height: 30px;
+    font-size: 25px;
+    color: blue;
+}
+.egal{
+    width: 50px;
+    height: 82px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(53, 53, 194);
+    color: white;
+}
+.toucheC{
+    background-color: orange;
+    color: blue;
+}
+.touchediv{
+    color: blue;
+}
+.toucheX{
+    color: blue;
+}
+
+
+@media screen and (min-width:320px) and (max-width: 760px){
+    
+    .forms{
+        width: 70%;
+        height: 75%;
+        border:none;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="calculatrice.css">
+</head>
+<body>
+    <div class="forms">
+        <div class="ecrans">
+            <input type="text" class="ecran">
+            <input type="text" class="input" disabled>
+
+        </div>
+        <div class="claviers">
+            <div class="clavier">
+                <div class="lignes">
+                    <div class="ligne" id="ligne1">
+                        <div class="touches">
+                            <button class="touchediv" onclick="ValeurEntrée('/')">/<i class="fa-solid fa-divide"></i></button>
+                            <button class="toucheX" onclick="ValeurEntrée('*')">X</button>
+                            <button class="toucheC" onclick="efface('c')">C</button>
+                        </div>
+                    </div>
+                    <div class="ligne" id="ligne2">
+                        <div class="touches">
+                            <button class="touche7" onclick="ValeurEntrée('7')">7</button>
+                            <button class="touche8" onclick="ValeurEntrée('8')">8</button>
+                            <button class="touche9" onclick="ValeurEntrée('9')">9</button>
+                        </div>
+                    </div>
+                    <div class="ligne" id="ligne3">
+                        <div class="touches">
+                            <button class="touche4" onclick="ValeurEntrée('4')">4</button>
+                            <button class="touche5" onclick="ValeurEntrée('5')">5</button>
+                            <button class="touche6" onclick="ValeurEntrée('6')">6</button>
+                        </div>
+                    </div>
+                    <div class="ligne" id="ligne4">
+                        <div class="touches">
+                            <button class="touche1" onclick="ValeurEntrée('1')">1</button>
+                            <button class="touche2" onclick="ValeurEntrée('2')">2</button>
+                            <button class="touche3" onclick="ValeurEntrée('3')">3</button>
+                        </div>
+                    </div>
+                    <div class="ligne" id="ligne5">
+                        <div class="touches">
+                            <button class="touche%" onclick="ValeurEntrée('%')">%</button>
+                            <button class="touche0" onclick="ValeurEntrée('0')">0</button>
+                            <button class="touche," onclick="ValeurEntrée('.')">.</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lignec">
+                    <div class="cols">
+                        <div class="col"><button class="toucheS" onclick="effaceDernier('<-')"><-</button></div>
+                        <div class="col"><button class="touche-" onclick="ValeurEntrée('-')">-</button></div>
+                        <div class="col"><button class="toucheP" onclick="ValeurEntrée('+')">+</button></div>
+                    </div>
+                    <div class="col4"><button class="egal" onclick="calcul()" ondblclick="restart()">=</button>
+                </div>
+        </div>
+    </div>
+<script src="calculatrice.js"></script>
+</body>
+</html>
